@@ -10,6 +10,9 @@ app.use(cors())
 
 app.use(express.json())
 
+app.get("/", (req, res) => {
+    res.send("Express on Vercel");
+  });
 app.use('/api/lodging', lodgingRouter);
 app.use('/api/activities', activitiesRouter);
 
