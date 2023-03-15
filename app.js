@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res) => {
-    res.send("Express on Vercel");
+    res.send("adress: for the Lodging(/api/lodging), popular lodging(/api/lodging/popular), activities(/api/activities)");
   });
 app.use('/api/lodging', lodgingRouter);
 app.use('/api/activities', activitiesRouter);
