@@ -22,3 +22,5 @@ mongoose
         })
     })
     .catch(error => console.log("Connexion echouée", error))
+
+module.exports = app;
